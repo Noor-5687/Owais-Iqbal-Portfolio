@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(85, 85, 85);
+}
+
+section {
+    padding: 100px 0;
+}
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+    transition: all 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link:hover {
+    color: grey !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: grey;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+#profile {
+    min-height: 100vh;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 0.8rem 1.5rem;
+}
+
+.btn-dark:hover {
+    background-color: black;
+    border-color: black;
+}
+
+.btn-outline-dark:hover {
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+
+#experience h1 {
+    margin-top: 0;
+  }
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+#contact {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info-container {
+    transition: transform 0.2s ease-in-out;
+}
+
+.contact-info-container:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 60px 0;
+    }
+    
+    #profile {
+        text-align: center;
+    }
+    
+    .profile-img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+#about p {
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+#about .icon {
+    transition: transform 0.3s ease;
+}
+
+#about .icon:hover {
+    transform: scale(1.1);
+}
+
+#about .border {
+    border-color: rgba(0,0,0,0.1) !important;
+    transition: all 0.3s ease;
+}
+
+#about .border:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+}
+
+#about .bg-light {
+    background-color: #f8f9fa !important;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.contact-hover {
+    transition: box-shadow 0.3s ease;
+}
+
+.contact-hover:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-hover:hover .icon {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
